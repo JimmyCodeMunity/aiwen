@@ -53,6 +53,7 @@ const Navbar = () => {
         <a href="/">
           {" "}
           <img src={logo} className="h-12 object contain" alt="" />
+          <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600 md:text-lg text-xs">AI women empowerment Network</p>
         </a>
       </div>
 

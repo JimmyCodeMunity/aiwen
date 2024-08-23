@@ -1,16 +1,18 @@
 import React from "react";
 import { women1, women2, women5 } from "../images";
 
-const Programs = () => {
+const AllPrograms = () => {
   return (
-    <div class="relative overflow-hidden w-full bg-white text-black  pb-32 md:space-y-24">
-      <h1 className="text-center md:text-[40px] text-[23px] font-bold">Programs</h1>
+    <div class="relative overflow-hidden w-full bg-white text-black pt-16 pb-32 md:space-y-24">
+      <h1 className="text-center md:text-[40px] text-[23px] font-bold">
+        Programs
+      </h1>
       <div class="relative">
         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
           <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 ">
             <div>
               <div>
-                <span class="flex md:mt-0 mt-5 h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -33,17 +35,11 @@ const Programs = () => {
                   AI Literacy WorkShops:
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
-                  Providing hands-on Artificial Intelligence education for
-                  women.
+                  We offer workshops and online courses to teach women about AI
+                  basics and applications. Our mentorship program connects women
+                  with AI professionals for guidance and support.
                 </p>
-                <div class="mt-6">
-                  <a
-                    class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-white font-semibold leading-7 text-black shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                    href="/about"
-                  >
-                    Learn More
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -66,7 +62,7 @@ const Programs = () => {
           <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
             <div>
               <div>
-                <span class="flex md:mt-0 mt-5 h-12 w-12 items-center justify-center rounded-xl bg-pink-500">
+                <span class="flex h-12 w-12 md:mt-0 mt-5 items-center justify-center rounded-xl bg-pink-500">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -88,17 +84,12 @@ const Programs = () => {
                   Ethical AI Advocacy:
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
-                  Advocating for policies that protect women's rights and
-                  privacy.
+                  Our advocacy efforts focus on researching and promoting
+                  policies that ensure AI is used ethically and inclusively. We
+                  run public campaigns to raise awareness about the importance
+                  of ethical AI..
                 </p>
-                <div class="mt-6">
-                  <a
-                    class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-white font-semibold leading-7 text-black shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                    href="/about"
-                  >
-                    Learn More
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -148,19 +139,14 @@ const Programs = () => {
               </div>
               <div class="mt-6">
                 <h2 class="text-3xl font-bold tracking-tight text-black">
-                Community Building:
+                  Community Building:
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
-                Connecting women through forums and networking events.
+                  We create forums for women to discuss AI-related topics and
+                  organize networking events to connect women with AI experts
+                  and each other..
                 </p>
-                <div class="mt-6">
-                  <a
-                    class="inline-flex rounded-lg bg-pink-600 px-4 py-1.5 text-white font-semibold leading-7 text-black shadow-sm ring-1 ring-pink-600 hover:bg-pink-700 hover:ring-pink-700"
-                    href="/about"
-                  >
-                    Learn More
-                  </a>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -173,7 +159,7 @@ const Programs = () => {
                 class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 // style="color:transparent"
                 // src="https://img.freepik.com/free-photo/handheld-shot-african-american-streamer-talking-headset-while-online-playing-first-person-shooter-gaming-pc-setup-gamer-girl-streaming-while-sitting-gaming-chair-explaining-gameplay_482257-46568.jpg?semt=ais_hybrid"
-                    src={women2}
+                src={women2}
               />
             </div>
           </div>
@@ -238,4 +224,4 @@ const Programs = () => {
   );
 };
 
-export default Programs;
+export default AllPrograms;

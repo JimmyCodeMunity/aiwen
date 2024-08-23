@@ -5,6 +5,8 @@ import Hero from '../components/Hero'
 import Programs from '../components/Programs'
 import Testimonials from '../components/Testimonials'
 import Newsletter from '../components/Newsletter'
+import Stats from '../components/Stats'
+import Partners from '../components/Partners'
 
 const HomePage = () => {
   return (
@@ -21,10 +23,22 @@ const HomePage = () => {
           <Hero/>
         </div>
       </div>
+      <div className="flex justify-center items-center">
+        <div className="w-full xl:max-w-[1280px]">
+          {/* Your Homepage Content */}
+          <Stats/>
+        </div>
+      </div>
       <div className="flex justify-center items-center bg-white w-full">
         <div className="w-full xl:max-w-[1280px]">
           {/* Your Homepage Content */}
           <Programs/>
+        </div>
+      </div>
+      <div className="flex justify-center items-center bg-white w-full">
+        <div className="w-full xl:max-w-[1280px]">
+          {/* Your Homepage Content */}
+          <Partners/>
         </div>
       </div>
       <div className="flex justify-center items-center bg-white w-full">

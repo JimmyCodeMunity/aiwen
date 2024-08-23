@@ -165,8 +165,9 @@ const Footer = () => {
           </div>
           <div class="py-7 border-t border-gray-700 ">
             <div class="flex items-center justify-center flex-col lg:space-y-0 space-y-8 lg:justify-between lg:flex-row">
-              <a href="/" class="flex justify-center ">
+              <a href="/" class="flex justify-center items-center">
                 <img src={logo} className="h-12" alt="" />
+                <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-pink-600 md:text-lg text-xs">AI women empowerment Network</p>
               </a>
               <span class="text-gray-400  block">
                 ©<a href="/">aiwen</a> 2024, All rights reserved.
