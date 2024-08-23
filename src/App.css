@@ -5,6 +5,7 @@
   background-size: cover;
   height: 90vh;
   width: 100%;
+  background-attachment: fixed;
 }
 .cover{
   height: 100%;

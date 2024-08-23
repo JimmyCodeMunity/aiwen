@@ -48,6 +48,7 @@ const Navbar = () => {
       id="navbar"
       className={`top-0 flex-1 sm:py-6 py-6 sm:px-6 flex justify-between items-center navbar fixed start-0 z-50 w-full ${stickyClass}`}
     >
+      <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
       <div className="flex-row space-x-3 flex justify-between items-center">
         <a href="/">
           {" "}

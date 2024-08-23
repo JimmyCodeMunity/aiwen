@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Programs from '../components/Programs'
 import Testimonials from '../components/Testimonials'
+import Newsletter from '../components/Newsletter'
 
 const HomePage = () => {
   return (
@@ -30,6 +31,12 @@ const HomePage = () => {
         <div className="w-full xl:max-w-[1280px]">
           {/* Your Homepage Content */}
           <Testimonials/>
+        </div>
+      </div>
+      <div className="flex justify-center items-center bg-white w-full">
+        <div className="w-full xl:max-w-[1280px]">
+          {/* Your Homepage Content */}
+          <Newsletter/>
         </div>
       </div>
       
