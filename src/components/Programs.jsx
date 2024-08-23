@@ -1,4 +1,5 @@
 import React from "react";
+import { women1, women2, women4, women5 } from "../images";
 
 const Programs = () => {
   return (
@@ -53,7 +54,7 @@ const Programs = () => {
                 width="647"
                 height="486"
                 class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 md:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://images.pexels.com/photos/15863066/pexels-photo-15863066/free-photo-of-openai-website-with-introduction-to-chatgpt-on-computer-monitor.jpeg?auto=compress&cs=tinysrgb&w=600"
+                src={women5}
               />
             </div>
           </div>
@@ -171,7 +172,8 @@ const Programs = () => {
                 height="485"
                 class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 // style="color:transparent"
-                src="https://img.freepik.com/free-photo/handheld-shot-african-american-streamer-talking-headset-while-online-playing-first-person-shooter-gaming-pc-setup-gamer-girl-streaming-while-sitting-gaming-chair-explaining-gameplay_482257-46568.jpg?semt=ais_hybrid"
+                // src="https://img.freepik.com/free-photo/handheld-shot-african-american-streamer-talking-headset-while-online-playing-first-person-shooter-gaming-pc-setup-gamer-girl-streaming-while-sitting-gaming-chair-explaining-gameplay_482257-46568.jpg?semt=ais_hybrid"
+                    src={women4}
               />
             </div>
           </div>
@@ -226,7 +228,7 @@ const Programs = () => {
                 width="647"
                 height="486"
                 class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="https://images.pexels.com/photos/21528908/pexels-photo-21528908/free-photo-of-people-with-gown-in-sunlight.jpeg?auto=compress&cs=tinysrgb"
+                src={women2}
               />
             </div>
           </div>
