@@ -1,5 +1,5 @@
 import React from "react";
-import { women1, women2, women4, women5 } from "../images";
+import { women1, women2, women5 } from "../images";
 
 const Programs = () => {
   return (
@@ -148,10 +148,10 @@ const Programs = () => {
               </div>
               <div class="mt-6">
                 <h2 class="text-3xl font-bold tracking-tight text-black">
-                  Legal and Health Support:
+                Community Building:
                 </h2>
                 <p class="mt-4 text-lg text-gray-500">
-                  Offering AI enhanced legal and health resources.
+                Connecting women through forums and networking events.
                 </p>
                 <div class="mt-6">
                   <a
@@ -173,14 +173,14 @@ const Programs = () => {
                 class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 // style="color:transparent"
                 // src="https://img.freepik.com/free-photo/handheld-shot-african-american-streamer-talking-headset-while-online-playing-first-person-shooter-gaming-pc-setup-gamer-girl-streaming-while-sitting-gaming-chair-explaining-gameplay_482257-46568.jpg?semt=ais_hybrid"
-                    src={women4}
+                    src={women2}
               />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="relative">
+      {/* <div class="relative">
         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">
           <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0 lg:col-start-2">
             <div>
@@ -233,7 +233,7 @@ const Programs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

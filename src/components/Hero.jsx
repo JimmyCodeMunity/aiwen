@@ -1,5 +1,5 @@
 import React from "react";
-import { woman1, woman2, women2 } from "../images";
+import { woman1, woman2, women2, women3 } from "../images";
 
 const Hero = () => {
   return (
@@ -137,7 +137,7 @@ const Hero = () => {
                                 id="widget2">
                             </iframe> */}
                     <img
-                      src={women2}
+                      src={women3}
                       className="h-full rounded-bl-2xl rounded-tr-[100px]"
                       alt=""
                     />
