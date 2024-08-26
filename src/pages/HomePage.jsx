@@ -18,13 +18,13 @@ const HomePage = () => {
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="w-full xl:max-w-[1280px]">
+        <div className="w-full ">
           {/* Your Homepage Content */}
           <Hero/>
         </div>
       </div>
       <div className="flex justify-center items-center">
-        <div className="w-full xl:max-w-[1280px]">
+        <div className="w-full">
           {/* Your Homepage Content */}
           <Stats/>
         </div>
@@ -36,7 +36,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="flex justify-center items-center bg-white w-full">
-        <div className="w-full xl:max-w-[1280px]">
+        <div className="w-full">
           {/* Your Homepage Content */}
           <Partners/>
         </div>
@@ -48,7 +48,7 @@ const HomePage = () => {
         </div>
       </div>
       <div className="flex justify-center items-center bg-white w-full">
-        <div className="w-full xl:max-w-[1280px]">
+        <div className="w-full">
           {/* Your Homepage Content */}
           <Newsletter/>
         </div>

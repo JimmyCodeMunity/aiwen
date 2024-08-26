@@ -1,5 +1,5 @@
 import React from "react";
-import { women1, women2, women5 } from "../images";
+import { women1, women2, women5, women6 } from "../images";
 
 const AllPrograms = () => {
   return (
@@ -159,7 +159,7 @@ const AllPrograms = () => {
                 class="w-full rounded-xl shadow-2xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 // style="color:transparent"
                 // src="https://img.freepik.com/free-photo/handheld-shot-african-american-streamer-talking-headset-while-online-playing-first-person-shooter-gaming-pc-setup-gamer-girl-streaming-while-sitting-gaming-chair-explaining-gameplay_482257-46568.jpg?semt=ais_hybrid"
-                src={women2}
+                src={women6}
               />
             </div>
           </div>

@@ -138,7 +138,7 @@ const Hero = () => {
                             </iframe> */}
                     <img
                       src={women3}
-                      className="h-full rounded-bl-2xl rounded-tr-[100px]"
+                      className="h-full object-contain rounded-bl-2xl rounded-tr-[100px]"
                       alt=""
                     />
                   </div>

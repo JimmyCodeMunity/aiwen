@@ -27,7 +27,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="flex justify-center items-center bg-white w-full">
-        <div className="w-full xl:max-w-[1280px]">
+        <div className="w-full">
           {/* Your Homepage Content */}
           <Partners/>
         </div>
