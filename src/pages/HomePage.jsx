@@ -7,6 +7,7 @@ import Testimonials from '../components/Testimonials'
 import Newsletter from '../components/Newsletter'
 import Stats from '../components/Stats'
 import Partners from '../components/Partners'
+import JoinUs from '../components/JoinUs'
 
 const HomePage = () => {
   return (
@@ -33,6 +34,12 @@ const HomePage = () => {
         <div className="w-full xl:max-w-[1280px]">
           {/* Your Homepage Content */}
           <Programs/>
+        </div>
+      </div>
+      <div className="flex justify-center items-center bg-white w-full">
+        <div className="w-full xl:max-w-[1280px]">
+          {/* Your Homepage Content */}
+          <JoinUs/>
         </div>
       </div>
       <div className="flex justify-center items-center bg-white w-full">

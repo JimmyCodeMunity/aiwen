@@ -7,6 +7,7 @@ import ContactUsPage from "./pages/ContactUsPage";
 import GetInvolvedPage from "./pages/GetInvolvedPage";
 import NewsPage from "./pages/NewsPage";
 import ResourcesPage from "./pages/ResourcesPage";
+import JoinUsPage from "./pages/JoinUsPage";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="/getinvolved" element={<GetInvolvedPage />} />
       <Route path="/newsandevents" element={<NewsPage />} />
       <Route path="/resources" element={<ResourcesPage />} />
+      <Route path="/joinus" element={<JoinUsPage />} />
     </Routes>
   );
 }

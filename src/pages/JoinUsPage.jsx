@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import ContactUs from '../components/ContactUs'
-import Partners from '../components/Partners'
+import Navbar from '../components/Navbar'
 
-const ContactUsPage = () => {
+import JoinForm from '../components/JoinForm'
+
+const JoinUsPage = () => {
   return (
     <div className="flex-1 w-full overflow-hidden bg-primary">
       <div className="flex sm:px-16 px-6 justify-center items-center">
@@ -14,18 +14,13 @@ const ContactUsPage = () => {
       </div>
 
       
-      <div className="flex justify-center items-center bg-white">
-        <div className="w-full">
+      <div className="flex justify-center items-center bg-white w-full">
+        <div className="w-full xl:max-w-[1280px]">
           {/* Your Homepage Content */}
-          <ContactUs/>
+          <JoinForm/>
         </div>
       </div>
-      <div className="flex justify-center items-center bg-white">
-        <div className="w-full">
-          {/* Your Homepage Content */}
-          <Partners/>
-        </div>
-      </div>
+      
       
       <div className="flex sm:px-6 px-6 justify-center items-center">
         <div className="w-full xl:max-w-[1280px]">
@@ -36,4 +31,4 @@ const ContactUsPage = () => {
   )
 }
 
-export default ContactUsPage
+export default JoinUsPage
