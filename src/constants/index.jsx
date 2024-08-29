@@ -22,7 +22,7 @@ export const navLinks = [
     {
       id: "getinvolved",
       name: "Get Involved",
-      path: "/getinvolved",
+      path: "/joinus",
     },
     {
       id: "contactus",
