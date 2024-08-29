@@ -1,211 +1,95 @@
 import React, { useEffect, useState } from "react";
+import { counties } from "../constants";
+import * as Icon from "react-feather";
+import { logo } from "../images";
+import StudentForm from "./StudentForm";
+import UserForm from "./UserForm";
 
 const JoinForm = () => {
-  const [countries, setCountries] = useState([]);
-  const [continent, setContinent] = useState("");
-  const [city, setCity] = useState("");
-  const [selectedCountry, setSelectedCountry] = useState("");
-
-  const getCountries = async () => {
-    try {
-      const response = await fetch("https://restcountries.com/v3.1/all");
-      const data = await response.json();
-      setCountries(data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  useEffect(() => {
-    getCountries();
-  }, []);
-
-  const handleCountryChange = (event) => {
-    const countryName = event.target.value;
-    setSelectedCountry(countryName);
-
-    const country = countries.find(
-      (country) => country.name.common === countryName
-    );
-
-    if (country) {
-      setContinent(country.region); // Set the continent/region based on the selected country
-      setCity(country.capital ? country.capital[0] : ""); // Set the city based on the selected country
-    } else {
-      setContinent("");
-      setCity("");
-    }
-  };
-
   return (
-    <div className="flex items-center justify-center p-12">
-      <div className="mx-auto w-full max-w-[550px] bg-white">
-        <form>
-          <div className="mb-5">
-            <label
-              htmlFor="name"
-              className="mb-3 block text-base font-medium text-[#07074D]"
+    <div class="min-h-screen p-6 bg-gray-100 flex items-center justify-between">
+      <div class="container max-w-screen-lg mx-auto flex md:flex-row flex-col md:justify-between justify-center items-center">
+        <div>
+          <div className="md:text-start text-center">
+            <h2 class="font-semibold text-xl text-gray-600">Join As User/Organization</h2>
+            <p class="text-gray-500 mb-6">
+              Understanding Artificial Intelligence today..
+            </p>
+            <button
+              className="bg-pink-500 md:p-3 p-1 md:w-60 w-full rounded-md text-white font-semibold"
+              onClick={() => document.getElementById("my_modal_1").showModal()}
             >
-              Full Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Full Name"
-              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-            />
-          </div>
-          <div className="mb-5">
-            <label
-              htmlFor="phone"
-              className="mb-3 block text-base font-medium text-[#07074D]"
-            >
-              Phone Number
-            </label>
-            <input
-              type="text"
-              name="phone"
-              id="phone"
-              placeholder="Enter your phone number"
-              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-            />
-          </div>
-          <div className="mb-5">
-            <label
-              htmlFor="email"
-              className="mb-3 block text-base font-medium text-[#07074D]"
-            >
-              Email Address
-            </label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter your email"
-              className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-            />
-          </div>
-          <div className="-mx-3 flex flex-wrap">
-            <div className="w-full px-3 sm:w-1/2">
-              <div className="mb-5">
-                <label
-                  htmlFor="date"
-                  className="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Date
-                </label>
-                <input
-                  type="date"
-                  name="date"
-                  id="date"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
-              </div>
-            </div>
-            <div className="w-full px-3 sm:w-1/2">
-              <div className="mb-5">
-                <label
-                  htmlFor="time"
-                  className="mb-3 block text-base font-medium text-[#07074D]"
-                >
-                  Time
-                </label>
-                <input
-                  type="time"
-                  name="time"
-                  id="time"
-                  className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div className="mb-5 pt-3">
-            <label className="mb-5 block text-base font-semibold text-[#07074D] sm:text-xl">
-              Address Details
-            </label>
-            <div className="-mx-3 flex flex-wrap">
-              <div className="w-full px-3 sm:w-1/2">
-                <div className="mb-5">
-                  <input
-                    type="text"
-                    name="area"
-                    id="area"
-                    placeholder="Enter Continent"
-                    value={continent}
-                    onChange={(e) => setContinent(e.target.value)}
-                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                  />
-                </div>
-              </div>
-              <div className="w-full px-3 sm:w-1/2">
-                <div className="mb-5">
-                  <select
-                    value={selectedCountry}
-                    onChange={handleCountryChange}
-                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                  >
-                    <option value="">Select country</option>
-                    {countries
-                      .sort((a, b) =>
-                        a.name.common.localeCompare(b.name.common)
-                      )
-                      .map((country) => (
-                        <option
-                          key={country.name.common}
-                          value={country.name.common}
-                        >
-                          {country.name.common}
-                        </option>
-                      ))}
-                  </select>
-                </div>
-              </div>
-              <div className="w-full px-3 sm:w-1/2">
-                <div className="mb-5">
-                  <input
-                    type="text"
-                    name="city"
-                    id="city"
-                    placeholder="Enter city"
-                    value={city}
-                    onChange={(e) => setCity(e.target.value)}
-                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                  />
-                </div>
-              </div>
-              <div className="w-full px-3 sm:w-1/2">
-                <div className="mb-5">
-                  <input
-                    type="text"
-                    name="state"
-                    id="state"
-                    placeholder="Enter state"
-                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                  />
-                </div>
-              </div>
-              <div className="w-full px-3 sm:w-1/2">
-                <div className="mb-5">
-                  <input
-                    type="text"
-                    name="post-code"
-                    id="post-code"
-                    placeholder="Post Code"
-                    className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <button className="hover:shadow-form w-full rounded-md bg-black py-3 px-8 text-center text-base font-semibold text-white outline-none">
-              Join Ai-Wen
+              Join as user/org
             </button>
+
+            {/* modal here */}
+            <dialog id="my_modal_1" className="modal rounded-xl p-4">
+              <div className="modal-box">
+                <div className="modal-action">
+                  <form method="dialog">
+                    {/* if there is a button in form, it will close the modal */}
+
+                    <button className="font-bold text-lg">
+                      <Icon.X size={30} color="black" />
+                    </button>
+                  </form>
+                </div>
+
+                <p className="py-4">
+                  Press ESC key or click the button above to close
+                </p>
+                <div className="modal-action">
+                  <UserForm/>
+                </div>
+              </div>
+            </dialog>
           </div>
-        </form>
+          <div className="md:text-start text-center">
+            <h2 class="font-semibold text-xl text-gray-600">Join As Student</h2>
+            <p class="text-gray-500 mb-6">
+              Understanding Artificial Intelligence today..
+            </p>
+            <button
+              className="bg-white border border-pink-500 text-pink-500 md:p-3 p-1 md:w-60 w-full rounded-md font-semibold"
+              onClick={() => document.getElementById("my_modal_2").showModal()}
+            >
+              Join as Student
+            </button>
+
+            {/* modal here */}
+            <dialog id="my_modal_2" className="modal rounded-xl p-4">
+              <div className="modal-box">
+                <div className="modal-action">
+                  <form method="dialog">
+                    {/* if there is a button in form, it will close the modal */}
+
+                    <button className="font-bold text-lg">
+                      <Icon.X size={30} color="black" />
+                    </button>
+                  </form>
+                </div>
+
+                <p className="py-4">
+                  Press ESC key or click the button below to close
+                </p>
+                <div className="modal-action">
+                  <StudentForm/>
+                </div>
+              </div>
+            </dialog>
+          </div>
+        </div>
+        <div>
+          <div class="w-full lg:justify-start justify-center items-start flex">
+            <div class="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
+              <img
+                class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl"
+                src={logo}
+                alt="about Us image"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
