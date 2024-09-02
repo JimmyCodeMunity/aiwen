@@ -21,6 +21,7 @@ const UserForm = () => {
                   id="full_name"
                   class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                   value=""
+                  placeholder="entegr fullname"
                 />
               </div>
 
@@ -44,7 +45,7 @@ const UserForm = () => {
                   id="address"
                   class="h-10 border mt-1 rounded px-4 w-full bg-gray-50"
                   value=""
-                  placeholder=""
+                  placeholder="enter home address"
                 />
               </div>
 

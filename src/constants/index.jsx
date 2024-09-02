@@ -387,4 +387,45 @@ export const navLinks = [
           "__v": 0
       }
   ]
+
+
+  export const testimonials = [
+    {
+      id: 1,
+      name: "Sarah L., AI Enthusiast",
+      review: "AI-WEN has truly empowered me to navigate the complexities of AI. The workshops and community support have given me the confidence to explore AI technologies and apply them in my career.",
+      rating: 5
+    },
+    {
+      id: 2,
+      name: "Maria G., Ethical AI Advocate",
+      review: "Thanks to AI-WEN, I've gained a deeper understanding of AI ethics and how it impacts our society. The resources and mentorship provided are invaluable.",
+      rating: 5
+    },
+    {
+      id: 3,
+      name: "Anita M., Tech Professional",
+      review: "The AI literacy programs offered by AI-WEN have opened up new opportunities for me. I've connected with amazing mentors who have guided me through the process of learning and applying AI in real-world scenarios.",
+      rating: 5
+    },
+    {
+      id: 4,
+      name: "Nina R., Policy Researcher",
+      review: "AI-WEN's commitment to promoting ethical AI practices is inspiring. I've been able to contribute to important discussions and campaigns that ensure AI benefits everyone.",
+      rating: 5
+    },
+    {
+      id: 5,
+      name: "Laura T., Legal Advisor",
+      review: "Being part of AI-WEN has been transformative. The community is supportive, and the AI-enhanced resources have been instrumental in advancing my legal career.",
+      rating: 5
+    },
+    {
+      id: 6,
+      name: "Emily W., Women's Rights Activist",
+      review: "AI-WEN has provided me with the tools and knowledge to advocate for women's rights in the AI space. The work they're doing is crucial for creating a more inclusive future.",
+      rating: 5
+    }
+  ];
+  
   

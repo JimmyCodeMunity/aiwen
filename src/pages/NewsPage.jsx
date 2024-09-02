@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import NewsEvents from '../components/NewsEvents'
+import NewsDummy from '../components/NewsDummy'
 
 const NewsPage = () => {
   return (
@@ -15,7 +16,7 @@ const NewsPage = () => {
       <div className="flex sm:px-6 px-6 justify-center items-center bg-white">
         <div className="w-full xl:max-w-[1280px]">
           {/* Your Homepage Content */}
-          <NewsEvents/>
+          <NewsDummy/>
         </div>
       </div>
       

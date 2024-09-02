@@ -46,9 +46,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section
-      className="bg-gray-50 transition-opacity ease-in duration-700"
-    >
+    <section className="bg-gray-50 transition-opacity ease-in duration-700">
       <div className="mx-auto max-w-[1340px] md:flex px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
         <div className="md:grid flex flex-col md:grid-cols-1 md:gap-8 md:grid-cols-3 lg:items-center lg:gap-16">
           <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -117,20 +115,19 @@ const Testimonials = () => {
                     </div>
                     <div className="mt-4">
                       <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
-                        Stayin' Alive
+                        Sarah L., AI Enthusiast
                       </p>
                       <p className="mt-4 leading-relaxed text-gray-700">
-                        No, Rose, they are not breathing. And they have no arms
-                        or legs … Where are they? You know what? If we come
-                        across somebody with no arms or legs, do we bother
-                        resuscitating them? I mean, what quality of life do we
-                        have there?
+                        AI-WEN has truly empowered me to navigate the
+                        complexities of AI. The workshops and community support
+                        have given me the confidence to explore AI technologies
+                        and apply them in my career.
                       </p>
                     </div>
                   </div>
-                  <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                  {/* <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                     &mdash; Michael Scott
-                  </footer>
+                  </footer> */}
                 </blockquote>
               </div>
               <div className="keen-slider__slide">
@@ -149,20 +146,18 @@ const Testimonials = () => {
                     </div>
                     <div className="mt-4">
                       <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
-                        Stayin' Alive
+                        Maria G., Ethical AI Advocate
                       </p>
                       <p className="mt-4 leading-relaxed text-gray-700">
-                        No, Rose, they are not breathing. And they have no arms
-                        or legs … Where are they? You know what? If we come
-                        across somebody with no arms or legs, do we bother
-                        resuscitating them? I mean, what quality of life do we
-                        have there?
+                        Thanks to AI-WEN, I've gained a deeper understanding of
+                        AI ethics and how it impacts our society. The resources
+                        and mentorship provided are invaluable.
                       </p>
                     </div>
                   </div>
-                  <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                  {/* <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                     &mdash; Michael ert34543
-                  </footer>
+                  </footer> */}
                 </blockquote>
               </div>
               <div className="keen-slider__slide">
@@ -181,20 +176,100 @@ const Testimonials = () => {
                     </div>
                     <div className="mt-4">
                       <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
-                        Stayin' Alive
+                      Anita M., Tech Professional
                       </p>
                       <p className="mt-4 leading-relaxed text-gray-700">
-                        No, Rose, they are not breathing. And they have no arms
-                        or legs … Where are they? You know what? If we come
-                        across somebody with no arms or legs, do we bother
-                        resuscitating them? I mean, what quality of life do we
-                        have there?
+                      The AI literacy programs offered by AI-WEN have opened up new opportunities for me. I've connected with amazing mentors who have guided me through the process of learning and applying AI in real-world scenarios.
                       </p>
                     </div>
                   </div>
-                  <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                  {/* <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
                     &mdash; Michael sdfsd
-                  </footer>
+                  </footer> */}
+                </blockquote>
+              </div>
+              <div className="keen-slider__slide">
+                <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+                  <div>
+                    <div className="flex gap-0.5 text-green-500">
+                      <svg
+                        className="size-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      {/* Additional star icons here */}
+                    </div>
+                    <div className="mt-4">
+                      <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
+                      Nina R., Policy Researcher
+                      </p>
+                      <p className="mt-4 leading-relaxed text-gray-700">
+                      AI-WEN's commitment to promoting ethical AI practices is inspiring. I've been able to contribute to important discussions and campaigns that ensure AI benefits everyone.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                    &mdash; Michael sdfsd
+                  </footer> */}
+                </blockquote>
+              </div>
+              <div className="keen-slider__slide">
+                <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+                  <div>
+                    <div className="flex gap-0.5 text-green-500">
+                      <svg
+                        className="size-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      {/* Additional star icons here */}
+                    </div>
+                    <div className="mt-4">
+                      <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
+                      Laura T., Legal Advisor
+                      </p>
+                      <p className="mt-4 leading-relaxed text-gray-700">
+                      Being part of AI-WEN has been transformative. The community is supportive, and the AI-enhanced resources have been instrumental in advancing my legal career.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                    &mdash; Michael sdfsd
+                  </footer> */}
+                </blockquote>
+              </div>
+              <div className="keen-slider__slide">
+                <blockquote className="flex h-full flex-col justify-between bg-white p-6 shadow-sm sm:p-8 lg:p-12">
+                  <div>
+                    <div className="flex gap-0.5 text-green-500">
+                      <svg
+                        className="size-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      {/* Additional star icons here */}
+                    </div>
+                    <div className="mt-4">
+                      <p className="text-2xl font-bold text-rose-600 sm:text-3xl">
+                      Emily W., Women's Rights Activist
+                      </p>
+                      <p className="mt-4 leading-relaxed text-gray-700">
+                      AI-WEN has provided me with the tools and knowledge to advocate for women's rights in the AI space. The work they're doing is crucial for creating a more inclusive future. I've connected with amazing mentors who have guided me through the process of learning and applying AI in real-world scenarios.
+                      </p>
+                    </div>
+                  </div>
+                  {/* <footer className="mt-4 text-sm font-medium text-gray-700 sm:mt-6">
+                    &mdash; Michael sdfsd
+                  </footer> */}
                 </blockquote>
               </div>
               {/* Additional slides here */}
