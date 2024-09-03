@@ -1,10 +1,12 @@
 import React from 'react'
+import Partners from '../components/Partners'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import NewsEvents from '../components/NewsEvents'
-import NewsDummy from '../components/NewsDummy'
+import { useParams } from 'react-router-dom'
+import BlogRead from '../components/BlogRead'
 
-const NewsPage = () => {
+const ReadBlog = () => {
+    const {id} = useParams();
   return (
     <div className="flex-1 w-full overflow-hidden bg-primary">
       <div className="flex sm:px-16 px-6 justify-center items-center">
@@ -13,11 +15,17 @@ const NewsPage = () => {
         </div>
       </div>
 
-      <div className="flex sm:px-6 px-6 justify-center items-center bg-white">
-        <div className="w-full xl:max-w-[1280px]">
+      
+      <div className="flex justify-center items-center bg-white w-full">
+        <div className="w-full">
           {/* Your Homepage Content */}
-          {/* <NewsDummy/> */}
-          <NewsEvents/>
+          <BlogRead id={id} />
+        </div>
+      </div>
+      <div className="flex justify-center items-center bg-white w-full">
+        <div className="w-full">
+          {/* Your Homepage Content */}
+          <Partners/>
         </div>
       </div>
       
@@ -30,4 +38,4 @@ const NewsPage = () => {
   )
 }
 
-export default NewsPage
+export default ReadBlog

@@ -6,6 +6,7 @@ import StudentForm from "./StudentForm";
 import UserForm from "./UserForm";
 
 const JoinForm = () => {
+  
   return (
     <div class="min-h-screen p-6 bg-gray-100 flex items-center justify-between">
       <div class="container max-w-screen-lg mx-auto flex md:flex-row flex-col md:justify-between justify-center items-center">

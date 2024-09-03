@@ -18,7 +18,7 @@ export const getNews = () => {
 export const getNewsById = (id) => {
     console.log("selected",id)
     return sanityQuery(`
-    *[_type == 'post' && _id == "${id}"]{
+    *[_type == 'news' && _id == "${id}"]{
         ...,
         
         
