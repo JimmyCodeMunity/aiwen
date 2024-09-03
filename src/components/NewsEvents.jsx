@@ -92,7 +92,7 @@ const NewsEvents = () => {
   return (
     <section class="py-24 ">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="font-manrope text-4xl font-bold text-gray-900 text-center mb-16">
+        <h2 class="font-manrope text-4xl font-bold text-gray-900 text-center">
           Our latest blog
         </h2>
         <div class="flex justify-center  gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
