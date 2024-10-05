@@ -5,7 +5,7 @@ const AllPrograms = () => {
   return (
     <div class="relative overflow-hidden w-full bg-white text-black pt-16 pb-32 md:space-y-24">
       <h1 className="text-center md:text-[40px] text-[23px] font-bold">
-        Programs
+        Projects
       </h1>
       <div class="relative">
         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8 ">

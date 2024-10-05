@@ -8,6 +8,10 @@ import Newsletter from '../components/Newsletter'
 import Stats from '../components/Stats'
 import Partners from '../components/Partners'
 import JoinUs from '../components/JoinUs'
+import Gallery from '../components/Gallery'
+import Team from '../components/Team'
+import 'animate.css';
+
 
 const HomePage = () => {
   return (
@@ -43,6 +47,12 @@ const HomePage = () => {
         </div>
       </div>
       <div className="flex justify-center items-center bg-white w-full">
+        <div className="w-full xl:max-w-[1280px]">
+          {/* Your Homepage Content */}
+          <Gallery/>
+        </div>
+      </div>
+      <div className="flex justify-center items-center bg-white w-full">
         <div className="w-full">
           {/* Your Homepage Content */}
           <Partners/>
@@ -52,6 +62,12 @@ const HomePage = () => {
         <div className="w-full xl:max-w-[1280px]">
           {/* Your Homepage Content */}
           <Testimonials/>
+        </div>
+      </div>
+      <div className="flex justify-center items-center bg-white w-full">
+        <div className="w-full xl:max-w-[1280px]">
+          {/* Your team Content */}
+          <Team/>
         </div>
       </div>
       <div className="flex justify-center items-center bg-white w-full">

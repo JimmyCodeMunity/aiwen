@@ -7,7 +7,7 @@ const Newsletter = () => {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:8000/api/v1/maillist//subscribetomail",
+        "https://aiwbackend.vercel.app/api/v1/maillist/subscribetomail",
         {
           method: "POST",
           headers: {

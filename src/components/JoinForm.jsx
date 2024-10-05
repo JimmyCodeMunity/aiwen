@@ -20,7 +20,7 @@ const JoinForm = () => {
               className="bg-pink-500 md:p-3 p-1 md:w-60 w-full rounded-md text-white font-semibold"
               onClick={() => document.getElementById("my_modal_1").showModal()}
             >
-              Join as user/org
+              Partner With Us
             </button>
 
             {/* modal here */}
@@ -54,7 +54,7 @@ const JoinForm = () => {
               className="bg-white border border-pink-500 text-pink-500 md:p-3 p-1 md:w-60 w-full rounded-md font-semibold"
               onClick={() => document.getElementById("my_modal_2").showModal()}
             >
-              Join as Student
+              Become a member
             </button>
 
             {/* modal here */}

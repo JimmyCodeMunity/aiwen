@@ -20,12 +20,11 @@ const AboutPage = () => {
           <About/>
         </div>
       </div>
-      <div className="flex sm:px-6 px-6 justify-center items-center bg-white w-full">
+      {/* <div className="flex sm:px-6 px-6 justify-center items-center bg-white w-full">
         <div className="w-full xl:max-w-[1280px]">
-          {/* Your Homepage Content */}
           <AllPrograms/>
         </div>
-      </div>
+      </div> */}
       <div className="flex justify-center items-center bg-white w-full">
         <div className="w-full">
           {/* Your Homepage Content */}

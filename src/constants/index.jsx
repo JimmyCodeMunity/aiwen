@@ -4,11 +4,11 @@ export const navLinks = [
     name: "Home",
     path: "/",
   },
-  {
-    id: "about",
-    name: "About Us",
-    path: "/about",
-  },
+  // {
+  //   id: "about",
+  //   name: "About Us",
+  //   path: "/about",
+  // },
   {
     id: "resources",
     name: "Resources",
@@ -22,7 +22,32 @@ export const navLinks = [
   {
     id: "getinvolved",
     name: "Get Involved",
-    path: "/joinus",
+    path: "",
+    subtopics:[
+      {
+        name:'partner with us',
+        path:'/joinus/partnerwithus'
+      },
+      {
+        name:'volunteer',
+        path:'/joinus/volunteer'
+      }
+    ]
+  },
+  {
+    id: "about",
+    name: "About Us",
+    path: "",
+    subtopics:[
+      {
+        name:'Programs',
+        path:'/joinus/partnerwithus'
+      },
+      {
+        name:'Team',
+        path:'/joinus/volunteer'
+      }
+    ]
   },
   {
     id: "contactus",
